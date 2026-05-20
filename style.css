@@ -1,4 +1,8 @@
-body{
+*{
+    margin: 0%;
+}
+#container{
+
     height: 100vh;
     background-color: black;
     display: flex;
@@ -33,7 +37,6 @@ body{
     position: absolute;
     height: 100px;
     width: 100px;
-
 }
 .heart::before{
     top: -50px;
@@ -42,4 +45,13 @@ body{
 .heart::after{
     top: 0px;
     left: -50px;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }    
 }
